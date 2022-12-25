@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>gg.dragonfruit</groupId>
-    <artifactId>Server</artifactId>
+    <artifactId>Commons</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Server</name>
+    <name>Commons</name>
 
     <parent>
         <groupId>gg.dragonfruit</groupId>
@@ -53,13 +53,19 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>gg.dragonfruit</groupId>
-            <artifactId>Commons</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.72.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>it.unimi.dsi</groupId>
+            <artifactId>fastutil</artifactId>
+            <version>8.5.6</version>
         </dependency>
     </dependencies>
+
     <build>
-        <finalName>Server</finalName>
+        <finalName>Commons</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <resources>
             <resource>
